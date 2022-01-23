@@ -1,0 +1,340 @@
+*{
+    box-sizing: 0;
+    padding: 0%;
+    margin: 0%;
+
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    /* display: none; */
+    
+    background: rgba(0, 0, 0, 0.904);
+    
+    
+}
+
+
+::-webkit-scrollbar-thumb{
+   
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 100px;
+}
+
+#full{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+#main{
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#Video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    
+}
+#bg{
+    width: 100%;
+    height: 100%;
+    /* background-color: #fafafa; *4
+    position: absolute;
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    
+    
+    
+}
+.pause{
+    position: absolute;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    left: 20%;
+    top: 4%;
+}
+#nav{
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    
+    /* background-color: rgb(141, 141, 141); */
+    
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    width: 400px;
+    height: 100%;
+    /* background: #000; */
+}
+#logo img{
+    height: 25%;
+    
+    
+}
+#logo button{
+    color: rgba(255, 255, 255, 0.815);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    margin-left: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    border-radius: 100px;
+    width: 100px;
+    height: 30px;
+    background: none;
+    
+    
+}
+#logo button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.178);
+
+}
+#ctrg{
+    color: rgba(255, 255, 255, 0.719);
+    display: flex;
+    align-items: center;
+    margin-right: 40px ;
+    height: 100%;
+    /* background: #000; */
+}
+#ctrg h4{
+    font-family: gilroy;
+    margin-right: 60px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+#ctrg i{
+    font-size: 18px;
+    color: white ;
+    margin-left: 30px;
+}
+
+h4:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.726);
+    color: rgb(255, 255, 255);
+    
+
+}
+#line{
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:500px;
+    height: 1px;
+    top: 50%;
+    transform: translate(-50%, 0) rotate(90deg);
+    left: 4% ;
+    background-color: rgb(197, 197, 197);
+
+}
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    transform: rotate(-90deg);
+    font-family: gilroy;
+    font-size: 2.6px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0,0,0,0);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.point:hover{
+    background-color: rgba(255, 255, 255, 0.685);
+
+    transform: rotate(-90deg) scale(5) ;  
+    color: black; 
+    width: 20px;
+    height: 8px;
+    border-radius: 100px;
+    /* margin-top: -20px; */
+    /* margin-bottom: -40px; */
+
+}
+#desc{
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: 30%;
+    width: 500px;
+    height: 500px;
+    /* background-color: red; */
+}
+#star{
+    font-family: gilroy;
+    color: rgba(255, 255, 255, 0.671);
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+#star i {
+    height: 100%;
+    color: #E79F2B;
+    margin-right: 10px;
+}
+
+#desc h1{
+    font-family: "gilroy";
+    
+    font-size: 70px;
+    margin-top: 20px;
+    
+}
+
+#desc p{
+    font-family: "gilroy";
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 14px;
+    margin-top: 20px;
+    line-height:25px;
+}
+#watch {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+#play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+    border: 1px solid rgb(255, 255, 255);
+
+}
+#play:hover{
+    background-color: rgba(255, 255, 255, 0.267);
+}
+h4{
+    margin-left: 20px;
+    font-family: "gilroy";
+}
+#cards{
+    display: flex;
+    position: absolute  ;
+    justify-content: space-between;
+    align-items: center;
+    top: 15%;
+    width: 870px;
+    height: 600px;
+    /* box-shadow: 2px 2px 20px; */
+    /* white-space: nowrap; */
+    /* flex-wrap: nowrap; */
+    /* background-color: blue; */
+    left: 42.5%;
+    /* right: 3%; */
+    overflow-x: scroll;  
+    /* overflow-y: hidden; */
+}
+#cards::-webkit-scrollbar{
+    display: none;
+}
+
+.cards img{
+    position: absolute;
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    white-space: nowrap;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).5s;
+    position: relative;
+    object-fit: cover;
+    margin-left: 30px;
+    width: 250px;
+    height: 370px;
+    min-width: 250px;
+    border-radius: 10px;
+    font-family: gilroy;
+
+    overflow: hidden;
+    /* background-color: darkblue; */
+}
+.cards:hover{
+    
+    transform: scale(1.2)
+}
+.cards>i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+.name{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    /* background-color: darkcyan; */
+}
+.name h1{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.name h3{
+
+    font-weight: 400;
+    font-size: 12px;
+}
+.name i{
+    color: #f0a733;
+    margin-top: 20px;
+
+}
+.name h5{
+    margin-top: 20px;
+  
+    display: inline;
+    font-weight: 600;
+
+}
